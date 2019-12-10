@@ -15,14 +15,18 @@ export class AppComponent {
     this.productList = [
       {
         id: 1,
-        name: 'iPhone',
-        price: 1000
+        name: 'iPhone 11',
+        price: 1000,
+        description: 'Apple product',
+        image: 'https://cdn.tgdd.vn/Products/Images/42/153856/iphone-11-red-2-400x460.png'
       },
 
       {
         id: 2,
-        name: 'Samsung',
-        price: 500
+        name: 'Galaxy S10',
+        price: 500,
+        description: 'Samsung product',
+        image: 'https://cdn.tgdd.vn/Products/Images/42/179530/samsung-galaxy-s10-plus-black-400x460.png'
       }
     ]
     ;

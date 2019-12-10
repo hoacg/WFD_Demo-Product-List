@@ -9,7 +9,7 @@
 
   <div class="row">
     <div class="col-4" *ngFor="let item of productList" style="padding-top: 10px;">
-      <my-product (click)="addToCart(item)"></my-product>
+      <my-product [product]="item" (buyClick)="addToCart(item)"></my-product>
     </div>
   </div>
 
