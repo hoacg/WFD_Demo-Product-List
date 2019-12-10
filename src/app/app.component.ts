@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'demo-angular-basic';
   productList: Product[];
   buyItems = 0;
+  isFormHidden = true;
 
   getProductList() {
     this.productList = [
@@ -34,5 +35,13 @@ export class AppComponent {
 
   addToCart(product: Product) {
     this.buyItems += product.price;
+  }
+
+  showForm() {
+    this.isFormHidden = !this.isFormHidden;
+  }
+
+  addProduct(product: Product) {
+    this.productList.push(product);
   }
 }
